@@ -6,10 +6,12 @@ int num = new Random().Next(10, 100);
 Console.WriteLine($"Num = {num}");
 int num1 = num / 10;
 int num2 = num % 10;
-int max = num1;
 
-if (num2 > max)
+if (num1 > num2)
 {
-  max = num2;
+  Console.WriteLine($"Max = {num1} ");
 }
-Console.WriteLine($"Max = {max} ");
+else
+{
+  Console.WriteLine($"Max = {num2} ");
+}
