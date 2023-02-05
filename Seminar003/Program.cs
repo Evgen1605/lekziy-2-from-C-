@@ -17,9 +17,9 @@ if (num1 % num2 == 0)
 }
 
 Console.WriteLine("Введите число 1: ");
-int number1 = int.Parse(Console.ReadLine());
+int number1 = int.Parse(Console.ReadLine()!);
 Console.WriteLine("Введите число 2: ");
-int number2 = int.Parse(Console.ReadLine());
+int number2 = int.Parse(Console.ReadLine()!);
 
 if (number1 % number2 == 0)
 {
