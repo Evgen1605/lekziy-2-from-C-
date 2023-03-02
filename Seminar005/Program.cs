@@ -6,17 +6,17 @@
 // 8,9  ->  нет
 Console.Clear();
 
-Console.WriteLine("Введите число 1: ");
-int num1 = int.Parse(Console.ReadLine()!);
-Console.WriteLine("Введите число 2: ");
-int num2 = int.Parse(Console.ReadLine()!);
+Console.Write("Введите число 1: ");
+int num1 = int.Parse(Console.ReadLine()!);// например вводим 5
+Console.Write("Введите число 2: ");
+int num2 = int.Parse(Console.ReadLine()!);// вводим 25
 
-if (num1 * num1 == num2 || num2 * num2 == num1)
+if (num1 * num1 == num2 || num2 * num2 == num1)// проверяем если например 5 * 5 = 25  или  если наоборот первое число будет 25 а второе 5, то 5 * 5 = 25
 {
-  Console.WriteLine("Да");
+  Console.WriteLine($"Да");// то выводим 
   return;
 }
 else
 {
-  Console.WriteLine("Нет");
+  Console.WriteLine("Нет");// если проверку не проходит , то выводим
 }

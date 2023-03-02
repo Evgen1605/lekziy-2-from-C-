@@ -5,20 +5,22 @@
 
 Console.Clear();
 
-int num1 = new Random().Next(10, 100);
-int num2 = new Random().Next(1, 10);
+int num1 = new Random().Next(10, 100);// первое 2-х значное рандомное число от 10 до 99
+int num2 = new Random().Next(1, 10);// второе рандомное число от 1 до 9
 
-if (num1 % num2 == 0)
+if (num1 % num2 == 0)// сравниваем если первое число делиться на второе без остатка
 {
-  Console.WriteLine($"{num1}, {num2} -> кратно");
+  Console.WriteLine($"{num1}, {num2} -> кратно");// то выводим в консоль
 }else
 {
-  Console.WriteLine($"{num1}, {num2} -> не кратно, остаток {num1 % num2}");
+  Console.WriteLine($"{num1}, {num2} -> не кратно, остаток {num1 % num2}");// если не делится, то выводим в консоль эту строку, где {num1 % num2} остаток первого числа
 }
 
-Console.WriteLine("Введите число 1: ");
+
+// Второе решение задачи
+Console.Write("Введите число 1: ");
 int number1 = int.Parse(Console.ReadLine()!);
-Console.WriteLine("Введите число 2: ");
+Console.Write("Введите число 2: ");
 int number2 = int.Parse(Console.ReadLine()!);
 
 if (number1 % number2 == 0)
