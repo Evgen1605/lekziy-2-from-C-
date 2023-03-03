@@ -5,17 +5,17 @@ Console.Clear();
 Console.Write("Введите номер четверти: ");
 int a = int.Parse(Console.ReadLine()!);
 
-if (a == 1){
-  Console.WriteLine("x > 0 && y > 0");
-}else if (a == 2){
-  Console.WriteLine("x < 0 && y < 0");
+if (a == 1){// делаем проверку, если номер четверти которую ввёл пользователь совпадает с 1
+  Console.WriteLine("x > 0 && y > 0");// то выводим сообщение
+}else if (a == 2){// делаем проверку, если номер четверти которую ввёл пользователь совпадает с 1
+  Console.WriteLine("x < 0 && y < 0");// то выводим сообщение
 }else if (a == 3){
   Console.WriteLine("x > 0 && y < 0");
 }else if (a == 4){
   Console.WriteLine("x < 0 && y > 0");
-}else if (a > 4)
+}else if (a > 4)// делаем проверку, если номер четверти которую ввёл пользователь больше 4, т.к по осям координат всего  плоскости
 {
-  Console.WriteLine("Неверный номер");
+  Console.WriteLine("Неверный номер");// то выводим сообщение
 }
 
 Console.WriteLine();
@@ -23,12 +23,12 @@ Console.WriteLine();
 Console.Write("Введите номер четверти: ");
 int quarter = int.Parse(Console.ReadLine()!); // решаем через switch
 
-switch (quarter)
+switch (quarter)// switch это почти тоже самое что и if else 
 {
-  case 1:
-        {
-          Console.WriteLine("x > 0  y > 0");
-          break;
+  case 1://эта запись равносильна if (quarter == 1) (из первого примера), делаем проверку, если номер четверти которую ввёл пользователь совпадает с 1
+    {
+          Console.WriteLine("x > 0  y > 0");// то в консоль выводим
+          break;// заканчиваем работу программы
         }
   case 2:
         {
@@ -45,9 +45,9 @@ switch (quarter)
           Console.WriteLine("x < 0  y > 0");
           break;
         }                  
-  default:
+  default:// по умолчанию будет если не с одним из четырёх кейсов(case) не совподает, то
         {
-          Console.WriteLine("Введена неправильная четверть");
-          break;
+          Console.WriteLine("Введена неправильная четверть");// выводим в консоль 
+          break;// и завершаем программу
         }
 }
